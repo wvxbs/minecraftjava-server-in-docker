@@ -1,5 +1,5 @@
 FROM ubuntu:20.04
-RUN apt update && apt upgrade -y && apt install -y sudo sed git build-essential gcc wget openjdk-17-jdk
+RUN apt update && apt upgrade -y && apt install -y sudo sed git build-essential wget openjdk-17-jdk
 RUN useradd -r -m -U -d /opt/minecraft -s /bin/bash minecraft
 RUN usermod -aG sudo minecraft
 RUN su - minecraft
